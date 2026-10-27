@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+.workbuddy/
 
 # C extensions
 *.so
@@ -218,3 +219,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============ Node / Vite (n90-island) ============
+# 依赖：体积大、可由 package-lock.json 复原，绝不入库
+node_modules/
+
+# npm / yarn / pnpm 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite 开发缓存
+.vite/
+
+# 环境变量（含密钥的本地文件）
+*.local
+
+# OS 杂物
+.DS_Store
+Thumbs.db
+
