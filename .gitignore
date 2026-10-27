@@ -240,3 +240,6 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
+# 本地规划笔记（内容已沉淀进 README 扩展指南，不入库）
+发展.txt
+
