@@ -1,0 +1,5 @@
+# Cloudflare Pages 缓存规则（构建后此文件位于 dist 根目录，Pages 自动读取）
+# /assets/* 同时覆盖 Vite 带 hash 的 JS/CSS 产物与 public/assets 下的 GLB/WebP/MP3
+# 注意：GLB/MP3/WebP 文件名不带 hash，将来替换同名资产时请顺手改名（如 n90-v2.glb）以击穿回访端的旧强缓存
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
